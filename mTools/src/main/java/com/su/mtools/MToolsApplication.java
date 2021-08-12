@@ -12,7 +12,7 @@ import java.sql.SQLException;
 @MapperScan(basePackages = {"com.su.mtools.mvc.mapper"})
 public class MToolsApplication {
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
         SpringApplication.run(MToolsApplication.class, args);
     }
 
