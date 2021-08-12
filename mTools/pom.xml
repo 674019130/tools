@@ -59,6 +59,11 @@
             <!--<scope>runtime</scope>-->
             <!--5版本 MySQL不需要该行-->
         </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.2.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
