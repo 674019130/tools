@@ -1,0 +1,25 @@
+#配置服务器端口
+server:
+  port: 8080
+  #定义项目路径
+  #servlet:
+  #context-path: /   localhost:8080/xxx
+  #context-path: /demo  localhost:8080/demo/xxx
+
+#设置数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver  #驱动注释,采用默认的方式
+    #com.mysql.jdbc.Driver 是5版本的驱动
+    #com.mysql.cj.jdbc.Driver 是8版本的驱动
+    url: jdbc:mysql://127.0.0.1:3306/jtdb?serverTimezone=GMT%2B8&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    #allowMultiQueries 1.可以在sql语句后携带分号，实现多语句执行。2.可以执行批处理，同时发出多个SQL语句。
+    username: root
+    password: root
+
+# MyBatis
+
+#设置debug显示
+logging:
+  level:
+    com.su.mtools: debug
