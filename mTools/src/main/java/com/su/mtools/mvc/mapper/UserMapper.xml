@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.su.mtools.mvc.dao.UserDao">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.su.mtools.mvc.dao.UserDao">
+        insert into users (id, user_name, password, create_time, create_user)
+        values (#{id}, #{userName}, #{password}, #{createTime}, #{createUser})
+    </insert>
+    <!-- 保存SQL语句查询结果与实体类属性的映射 -->
+    <resultMap id="resultMapBase" type="com.su.mtools.mvc.dao.UserDao">
+        <id column="id" property="id"/>
+        <result column="userName" property="user_name"/>
+        <result column="createTime" property="create_time"/>
+    </resultMap>
+</mapper>
