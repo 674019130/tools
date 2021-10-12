@@ -8,7 +8,8 @@ import java.util.Date;
  */
 public class Response<T> {
     /**
-     * 是否请求成功 ture 请求成功  false 请求失败
+     * 是否请求成功
+     * ture 请求成功  false 请求失败
      */
     private boolean success;
     /**
